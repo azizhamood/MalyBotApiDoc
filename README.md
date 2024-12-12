@@ -62,8 +62,8 @@ get secretKey and appId from web site
         }
 `id`: if 0 or null well create new menu  else update menu by id <br />
 `menuName` :Name from Api not Use by bot <br /> 
-`buttonText`:optional 
-`botId` :get by `GET /api/Bot`
+`buttonText`:optional <br />
+`botId` :get by `GET /api/Bot`<br />
 `structureType` :Should be `X`<br />
 ![image description](./menu.jpg)
 ### Response
@@ -102,12 +102,12 @@ get secretKey and appId from web site
                     }
            ]
     }
-`clientId` :what is client save requset
-`requset_no` :Requset no
-`from` : Mobile Number thet sen requset
-`doc_type, menu_no,`:null
-`processed` :return 0 if not processed else return 1,
-`action` : return action from menu item selected
+`clientId` :what is client save requset<br />
+`requset_no` :Requset no<br />
+`from` : Mobile Number thet sen requset<br />
+`doc_type, menu_no,`:null<br />
+`processed` :return 0 if not processed else return 1,<br />
+`action` : return action from menu item selected<br />
 
 ## Send Message
 
@@ -131,14 +131,14 @@ get secretKey and appId from web site
             "capture": "string"
         }
     }
-`clientId` : null
-`requset_no`: requset number that response by get requset or null
-`to` : mobile number
-`mimType` : Text ,Media 
-`fileName` : file name if `mimType` Media
-`menuNo` :null
-`content` :plan text or base64 if `mimType` is Media
-`capture` :if `mimType` is Media
+`clientId` : null<br />
+`requset_no`: requset number that response by get requset or null<br />
+`to` : mobile number<br />
+`mimType` : Text ,Media <br />
+`fileName` : file name if `mimType` Media<br />
+`menuNo` :null<br />
+`content` :plan text or base64 if `mimType` is Media<br />
+`capture` :if `mimType` is Media<br />
 ### Response
 
     {
@@ -146,6 +146,6 @@ get secretKey and appId from web site
       "message": "String",
       "content": "string"
     }
-`code`:200 if  Success
-`message` : Success or error message if not Success
-`content` : return Id message if code 200 or error message details
+`code`:200 if  Success<br />
+`message` : Success or error message if not Success<br />
+`content` : return Id message if code 200 or error message details<br />
