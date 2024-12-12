@@ -113,7 +113,7 @@ get secretKey and appId from web site
 
 ### Request
 
-`P /api/Client/senMessage`
+`POST /api/Client/senMessage`
 
     
     curl -i -H 'Accept: application/json' http://localhost:7000/thing/1
