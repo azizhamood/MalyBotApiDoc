@@ -30,6 +30,53 @@ get secretKey and appId from web site
           }
     }
 
+## Create Or Update Menu
+
+### Request
+
+`POST /api/Menu/Sync`
+
+    curl -i -H 'Accept: application/json' http://localhost:7000/thing/1
+     body :
+        {
+            "id": 0,
+            "menuName": "string",
+            "body": "string",
+            "buttonText": "string",
+            "title": "string",
+            "footer": "string",
+            "structureType": "string",
+            "itemTitle": "string",
+            "type": "string",
+            "botId": 0,
+            "items": [
+                {
+                "id": 0,
+                "title": "string",
+                "description": "string",
+                "action": "string",
+                "menuModelId": 0,
+                "isDeleted": true
+                }
+            ]
+        }
+`id`: if 0 or null well create new menu  else update menu by id <br />
+`menuName` :Name from Api not Use by bot <br /> 
+`buttonText`:optional 
+`botId` :get by `GET /api/Bot`
+`structureType` :Should be `X`<br />
+
+ <br />
+![image description](./menu.jpg)
+### Response
+
+    {
+      "code": int,
+      "message": "String",
+      "content": "string"
+    }
+
+
 ## Get Requset From Bot
 
 ### Request
@@ -104,50 +151,3 @@ get secretKey and appId from web site
 `code`:200 if  Success
 `message` : Success or error message if not Success
 `content` : return Id message if code 200 or error message details
-
-## Create Or Update Menu
-
-### Request
-
-`POST /api/Menu/Sync`
-
-    curl -i -H 'Accept: application/json' http://localhost:7000/thing/1
-    body :
-     {
-  "id": 0,
-  "menuName": "string",
-  "body": "string",
-  "buttonText": "string",
-  "title": "string",
-  "footer": "string",
-  "structureType": "string",
-  "itemTitle": "string",
-  "type": "string",
-  "botId": 0,
-  "items": [
-    {
-      "id": 0,
-      "title": "string",
-      "description": "string",
-      "action": "string",
-      "menuModelId": 0,
-      "isDeleted": true
-    }
-  ]
-}
-`id`: if 0 or null well create new menu  else update menu by id <br />
-`menuName` :Name from Api not Use by bot <br /> 
-`buttonText`:optional 
-`botId` :get by `GET /api/Bot`
-`structureType` :Should be `X`<br />
-
- <br />
-![image description](./menu.jpg)
-### Response
-
-    {
-      "code": int,
-      "message": "String",
-      "content": "string"
-    }
-
