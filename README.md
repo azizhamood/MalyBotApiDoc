@@ -239,8 +239,11 @@ get secretKey and appId from web site
   ]
 }
 `id`: if 0 or null well create new menu  else update menu by id <br />
-`menuName` :Name from Api not Use by bot <br />
-`body` : 
+`menuName` :Name from Api not Use by bot <br /> 
+`buttonText`:optional 
+`botId` :get by `GET /api/Bot`
+`structureType` :Should be `X`<br />
+
  <br />
 ![image description](./menu.jpg)
 ### Response
