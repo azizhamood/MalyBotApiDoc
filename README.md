@@ -65,8 +65,6 @@ get secretKey and appId from web site
 `buttonText`:optional 
 `botId` :get by `GET /api/Bot`
 `structureType` :Should be `X`<br />
-
- <br />
 ![image description](./menu.jpg)
 ### Response
 
