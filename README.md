@@ -137,6 +137,7 @@ get secretKey and appId from web site
 `id`: if 0 or null well create new menu  else update menu by id 
 `menuName` :Name from Api not Use by bot 
 `body` : 
+![image description](./menu.jpg)
 ### Response
 
     HTTP/1.1 404 Not Found
