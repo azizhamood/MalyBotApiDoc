@@ -134,9 +134,11 @@ get secretKey and appId from web site
             }
           ]
         }
-`id`: if 0 or null well create new menu  else update menu by id 
-`menuName` :Name from Api not Use by bot 
+`id`: if 0 or null well create new menu  else update menu by id <br />
+`menuName` :Name from Api not Use by bot <br />
 `body` : 
+ <br />
+![image description](./menu.jpg)
 ### Response
 
     HTTP/1.1 404 Not Found
